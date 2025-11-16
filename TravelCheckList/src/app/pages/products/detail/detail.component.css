@@ -1,0 +1,8 @@
+img{
+    width: 100%;
+}
+.price{
+    text-align: end;
+    font-size: large;
+    font-weight: bold;
+}

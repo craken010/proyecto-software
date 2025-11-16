@@ -1,0 +1,15 @@
+img{
+    height: 200px;
+    object-fit: scale-down;
+}
+
+mat-card{
+    
+    margin-bottom: 10px;
+}
+
+.Price{
+    font-size: large;
+    font-weight: bold;
+    text-align: end;
+}

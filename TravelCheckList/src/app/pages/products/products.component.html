@@ -1,0 +1,15 @@
+<h2>Product Catalog</h2>
+<mat-button-toggle-group (valueChange)="OnCategoryChange($event)">
+    <mat-button-toggle value="" checked="true">All</mat-button-toggle>
+    @for (category of categories; track $index) {
+        <mat-button-toggle [value]="category">{{category}}</mat-button-toggle>
+    }
+  </mat-button-toggle-group>
+
+<div class="row">
+    @for (product of products; track product.id) {
+        <div class="col-md-4 col-sm-6 col-12">
+           <app-product [product]="product" />
+        </div>
+    }
+</div>
